@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FontDale | Newsletter</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-title">FontDale</span>
+        <span class="brand-subtitle">Premium Lifestyle Mall</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open navigation">&#9776;</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="events.html">Events</a>
+        <a href="about.html">About Us</a>
+        <a class="active" href="newsletter.html">Newsletter</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container two-col">
+
+      <article class="news-card">
+        <span class="eyebrow">Stay Connected</span>
+        <h1>Receive curated updates from FontDale</h1>
+        <p>Register to hear about events, tenant highlights, and lifestyle news that match your interests.</p>
+        <ul class="list-clean">
+          <li><strong>Name:</strong> Requires at least 3 characters and a full name.</li>
+          <li><strong>Email:</strong> Checks for one @ and a valid domain structure.</li>
+          <li><strong>Phone:</strong> Allows only digits or a leading +.</li>
+          <li><strong>Topic:</strong> You must pick a topic of interest.</li>
+          <li><strong>Frequency:</strong> Choose how often you want updates.</li>
+        </ul>
+      </article>
+
+      <section class="form-card">
+        <form id="newsletterForm" novalidate>
+          <div class="form-grid">
+            <div class="field">
+              <label for="fullName">Full Name</label>
+              <input id="fullName" type="text" placeholder="Enter your full name">
+              <div class="error" id="fullNameError"></div>
+            </div>
+
+            <div class="field">
+              <label for="email">Email Address</label>
+              <input id="email" type="text" placeholder="Enter your email address">
+              <div class="error" id="emailError"></div>
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone Number</label>
+              <input id="phone" type="text" placeholder="+628123456789">
+              <div class="error" id="phoneError"></div>
+            </div>
+
+            <div class="field">
+              <label for="topic">Topic of Interest</label>
+              <select id="topic">
+                <option value="">Select a topic</option>
+                <option value="fashion">Fashion</option>
+                <option value="dining">Dining</option>
+                <option value="events">Events</option>
+                <option value="lifestyle">Lifestyle</option>
+              </select>
+              <div class="error" id="topicError"></div>
+            </div>
+
+            <div class="field full-span">
+              <label for="frequency">Update Preference</label>
+              <select id="frequency">
+                <option value="">Select update frequency</option>
+                <option value="weekly">Weekly</option>
+                <option value="biweekly">Every Two Weeks</option>
+                <option value="monthly">Monthly</option>
+              </select>
+              <div class="error" id="frequencyError"></div>
+            </div>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Register for Newsletter</button>
+          <div class="success-box" id="successMessage">Registration successful. Welcome to FontDale updates.</div>
+          <div class="fail-box" id="failMessage">Please review the form. Some fields still need correction.</div>
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Stay in touch with us</h3>
+          <p>Dont miss out on great things we’re hoping you visitors to attend by the desire of our creations and events!</p>
+        </div>
+        <div>
+          <h3>FontDale Updates</h3>
+          <p>Choose your interest and preferred frequency to receive more relevant content.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-brand">FontDale</span>
+        <p>&copy; 2026 FontDale. Premium Lifestyle Mall at Arcadia Circle.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
